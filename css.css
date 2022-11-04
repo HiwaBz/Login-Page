@@ -1,0 +1,100 @@
+@font-face {
+  font-family: yekan;
+  src: url(src/fonts/bold.ttf);
+}
+@font-face {
+  font-family: yekanb;
+  src: url(src/fonts/300.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+}
+.form {
+  margin-top: -2.5rem;
+}
+.row .left,
+.row .right {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right .form {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+}
+
+.left {
+  background: url(https://hub.iranserver.com/templates/seven-2021/build/assets/img/login-new.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: yekan;
+}
+.iranServer {
+  color: white;
+}
+label {
+  font-family: yekanb;
+}
+input::placeholder,
+small,
+.btn,
+.alert {
+  font-family: yekanb;
+  font-size: 14px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-top: 5px;
+}
+.roles u {
+  cursor: pointer;
+}
+
+.regLog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reg,
+.role {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .row .left {
+    display: none;
+  }
+  .row .right {
+    background: url(https://hub.iranserver.com/templates/seven-2021/build/assets/img/login-new.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .right .form {
+    background-color: white;
+    max-width: 530px;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 7px;
+  }
+}
